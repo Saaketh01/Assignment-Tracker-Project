@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f00; /* Red color on hover */
+  color: #f00; 
 }
 
 /* Home section styles */
