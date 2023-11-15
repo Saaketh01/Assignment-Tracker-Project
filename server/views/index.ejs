@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!--CSS files-->
+  <link rel='stylesheet' href='/Content/style.css'/>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+ 
+</head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id = "navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Saaketh Potluri</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <% if (title == "Home") { %>
+          <a class="nav-link active" href="#Home">
+          <% } else { %>
+          <a class="nav-link" href="#Home">
+          <% } %>
+          <i class="fa-solid fa-house"></i> Home</a>
+        </li> 
+        <li class="nav-item">
+        <% if (title == "Tracker") { %>
+          <a class="nav-link active" href="/assignmentlist">
+          <% } else { %>
+          <a class="nav-link" href="/assignmentlist">
+          <% } %>
+          <i class="fas fa-calendar-check"></i>Tracker</a>
+        </li>              
+    </div>
+  </div>
+</nav>
+<section id="Home">
+        <div class="container">
+            <h2>Welcome to Assignment Tracker</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+             <p>
+            Keep your assignments organized and never miss a deadline with my Assignment Tracker. 
+            This tool is designed to help you manage your tasks efficiently and stay on top of your academic responsibilities.
+            </p>
+            <p>
+            To get started, navigate to the "Tracker" page using the menu above. There, you can add, edit, and mark your assignments as completed.
+            Use the home page to find helpful information, tips, and updates related to your assignments and academic journey.
+           </p>
+           <p>
+            We hope this tool enhances your productivity and contributes to your academic success. If you have any feedback or questions,
+            feel free to reach out. Happy studying!
+        </p>
+        </div>
+  </section>
+
+<!-- Styling for footer -->
+<style>
+    body {
+      margin-bottom: 56px; 
+    }
+
+    #navbar1 {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .footer {
+      background-color: #343a40; 
+      color: #ffffff; 
+      text-align: center; 
+      padding: 20px; 
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+<!--End of Styling for footer -->
+
+  <!-- Fixed Footer -->
+  <footer class="footer">
+    <h3>Thank you for visiting my page</h3>
+    <p>You can reach me at <a href="mailto:saaketh.potluri@ontariotechu.net">saaketh.potluri@ontariotechu.net</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/saaketh-potluri-a76a2b272/"><i class="fa-brands fa-linkedin">&nbsp;&nbsp;</i>https://www.linkedin.com/in/saaketh-potluri-a76a2b272/</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Saaketh01"><i class="fa-brands fa-github fa-lg"></i>&nbsp; https://github.com/Saaketh01</a></p>
+  </footer>
+ <!-- End of Fixed Footer -->
+    
+</body>
+</html>

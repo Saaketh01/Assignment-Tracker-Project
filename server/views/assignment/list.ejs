@@ -1,0 +1,107 @@
+<!--CSS Files-->
+<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+<script src="/Scripts/app.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/jquery/dist/jquery/min.js"></script>
+
+<!--Header Navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id = "navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Assignment Tracker</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<!--End of Header Navigation bar-->
+
+
+
+<!--Assignment Tracker table -->
+<section id="Tracker">
+    <main class="container">
+        <div class="row">
+            <div class="offset-md-1 col-md-10">
+                <br>
+                <h1>Assignment Tracker</h1>
+                <br>
+                <a href="/Assignmentlist/add" class="btn btn-primary" role="button"><i class="fas fa-plus-circle"></i> Add Assignment</a>
+                <br>
+                <br>
+                <table class="table table-bordered table-striped table-hover">
+                    <tr class="d-flex">
+                        <th class="col-2">CourseName</th>
+                        <th class="col-2">AssignmentName</th>
+                        <th class="col-2">DueDate</th>
+                        <th class="col-2">Status</th>
+                        <th class="col-2">Edit</th>
+                        <th class="col-2">Delete</th>
+                    </tr>
+                    <!-- Repeat the template -->
+                    <% for(let count=0; count < AssignList.length; count++){ %>
+                        <tr class="d-flex">
+                            <td class="col-2"><%= AssignList[count].CourseName %></td>
+                            <td class="col-2"><%= AssignList[count].AssignmentName %></td>
+                            <td class="col-2"><%= AssignList[count].Duedate %></td>
+                            <td class="col-2"><%= AssignList[count].Status %></td>
+                            <td class="col-2">
+                                <a href="/Assignmentlist/edit/<%= AssignList[count]._id %>" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i> Edit
+                                </a>
+                            </td>
+                            <td class="col-2">
+                                <a href="/Assignmentlist/delete/<%= AssignList[count]._id %>" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i> Delete
+                                </a>
+                            </td>
+                        </tr>
+                    <% } %>
+                </table>
+            </div>
+        </div>
+    </main>
+</section>
+<!--End of Assignment Tracker table -->
+
+<!-- Styling for footer section of the add assignment page -->
+  <style>
+    body {
+      margin-bottom: 56px; 
+    }
+
+    #navbar1 {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .footer {
+      background-color: #343a40; 
+      color: #ffffff; 
+      text-align: center; 
+      padding: 20px; 
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<!-- End of Styling for footer section of the add assignment page -->
+
+  <!-- Footer Navigation bar -->
+  <nav class="navbar1 navbar-expand-lg navbar-dark bg-lg" id="navbar">
+    <div class="container-fluid">
+    </div>
+  </nav>
+  <!-- End of Footer Navigation bar -->
+
+  <!-- Fixed Footer -->
+  <footer class="footer">
+    <h3>Thank you for visiting my page</h3>
+    <p>You can reach me at <a href="mailto:saaketh.potluri@ontariotechu.net">saaketh.potluri@ontariotechu.net</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/saaketh-potluri-a76a2b272/"><i class="fa-brands fa-linkedin">&nbsp;&nbsp;</i>https://www.linkedin.com/in/saaketh-potluri-a76a2b272/</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Saaketh01"><i class="fa-brands fa-github fa-lg"></i>&nbsp; https://github.com/Saaketh01</a></p>
+  </footer>
+</body>
+</html>
+<!-- End of Fixed Footer -->
