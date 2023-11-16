@@ -1,4 +1,4 @@
 module.exports = 
 {
-    "URI":"mongodb://0.0.0.0:27017/AssignTracker"
+    "URI":"mongodb+srv://saakethpotluri:55rhxNG4aIYe1tFg@mongodbserver.wfulppe.mongodb.net/AssignTracker"
 }
