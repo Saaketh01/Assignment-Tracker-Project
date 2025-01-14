@@ -1,3 +1,2 @@
-# Assignment-3
-Name : Saaketh Potluri
-This is an Assignment Tracker. It performs the CRUD Operations.
+# Assignment Tracker Project
+Description : Implementing a Python-based assignment tracker system with CRUD (Create, Read, Update, Delete) operations. 
