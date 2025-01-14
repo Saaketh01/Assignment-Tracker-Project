@@ -1,6 +1,6 @@
 # Assignment Tracker Project
 
-Description:This project implements a Python-based assignment tracker system that supports CRUD (Create, Read, Update, Delete) operations for managing assignments. The system allows users to add new assignments, delete existing ones, and edit assignments (such as changing the deadline).
+Description: This project implements a Python-based assignment tracker system that supports CRUD (Create, Read, Update, Delete) operations for managing assignments. The system allows users to add new assignments, delete existing ones, and edit assignments (such as changing the deadline).
 
 Key Features:
 Create: Users can add new assignments, providing details like the assignment title, description, and deadline.
